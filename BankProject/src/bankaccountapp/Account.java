@@ -25,6 +25,10 @@ public abstract class Account implements IBaseRate {
 
     public abstract void setRate();
 
+    public double getBalance() {
+        return this.balance;
+    }
+
     private String setAccountNumber() {
         String lastTwoOfSSN = sSN.substring(sSN.length()-2, sSN.length());
         int uniqueID = index;
