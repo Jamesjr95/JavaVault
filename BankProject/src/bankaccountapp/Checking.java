@@ -2,8 +2,8 @@ package bankaccountapp;
 
 public class Checking extends Account {
     // List properites specific to a checking account
-    int debitCardNumber;
-    int debitCardPIN;
+    private int debitCardNumber;
+    private int debitCardPIN;
 
     // Constructor to initialize checking account properties
     public Checking(String name, String sSN, double initDeposit) {
@@ -14,7 +14,7 @@ public class Checking extends Account {
 
     @Override
     public void setRate() {
-        System.out.println("implement rate for Checking");
+        rate = getBaseRate() * .15;
     }
 
     // List any methods specific to the checking account
