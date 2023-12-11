@@ -25,6 +25,13 @@ public abstract class Account implements IBaseRate {
 
     public abstract void setRate();
 
+    public String getAccountNumber() {
+        return this.accountNumber;
+    }
+    public String getName() {
+        return this.name;
+    }
+
     public double getBalance() {
         return this.balance;
     }
